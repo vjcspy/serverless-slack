@@ -7,7 +7,7 @@ app.use(helmet());
 
 app.get('/', (_, res) => {
   res.json({
-    msg: 'Hello World',
+    msg: 'Chiaki Slack service',
   });
 });
 
