@@ -46,7 +46,6 @@ Only do it once when starting project initialization
 
 3. Change `region` config in `serverless.yml` if needed (default Singapore/ap-southeast-1)
 
-   
 
 After that, just run this for every deploy
 
