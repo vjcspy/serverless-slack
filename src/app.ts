@@ -11,6 +11,12 @@ app.get('/', (_, res) => {
   });
 });
 
+app.get('/health', (_, res) => {
+  res.json({
+    msg: 'ok',
+  });
+});
+
 app.use((_, res, _2) => {
   res.status(404).json({ error: 'NOT FOUND' });
 });

@@ -26,3 +26,31 @@ Developer experience first:
 - ✨ HTTP Api instead of API gateway for cost optimization
 - 💨 Live reload
 
+### Getting started
+
+```bash
+npm run dev
+```
+
+### Deploy to production
+
+Only do it once when starting project initialization
+
+1. Manage connections to AWS with [Serverless Dashboard](https://www.serverless.com/framework/docs/tutorial#what-is-serverless-dashboard)
+
+2. Create new app by add [existing project](https://app.serverless.com/). Make sure you run command 
+
+   ```bash
+   serverless --org=YOUR_ACCOUNT
+   ```
+
+3. Change `region` config in `serverless.yml` if needed (default Singapore/ap-southeast-1)
+
+   
+
+After that, just run this for every deploy
+
+```bash
+npm run deploy
+```
+

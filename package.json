@@ -11,7 +11,8 @@
     "lint": "eslint --ext .js,.ts .",
     "build-types": "tsc --noEmit --pretty",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "npm run deploy-prod"
   },
   "dependencies": {
     "express": "^4.18.1",
