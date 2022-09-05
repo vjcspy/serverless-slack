@@ -48,7 +48,8 @@
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }
-        ]
+        ],
+        "no-console": "off"
       }
     },
     // Configuration for testing

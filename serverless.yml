@@ -26,6 +26,8 @@ provider:
   httpApi:
     # metrics: true # Enable if you need
     cors: true
+  environment:
+    USERS_TABLE: ${param:<key>}
 
 functions:
   app:
