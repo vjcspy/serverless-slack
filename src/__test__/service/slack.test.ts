@@ -50,6 +50,8 @@ describe('Service Slack', () => {
   });
 
   it('should return undefined when not config env', () => {
+    process.env.SLACK_SIGNING_SECRET = undefined;
+
     const slack = initializeSlack();
 
     expect(slack).toEqual(undefined);

@@ -45,6 +45,8 @@ describe('Routing Post Message', () => {
 
   it('should return 400 when not config secret', async () => {
     mockInitializeSlackFn.mockReturnValue({});
+    process.env.SLACK_POST_MESSAGE_SECRET = undefined;
+
     const mReq = { token: '123' };
     const mRes = { status: jest.fn().mockReturnThis(), json: jest.fn() };
     await slackPostMessageController(mReq as any, mRes as any);
