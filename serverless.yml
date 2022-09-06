@@ -27,7 +27,9 @@ provider:
     # metrics: true # Enable if you need
     cors: true
   environment:
-    USERS_TABLE: ${param:<key>}
+    SLACK_BOT_TOKEN: ${param:SLACK_BOT_TOKEN}
+    SLACK_SIGNING_SECRET: ${param:SLACK_SIGNING_SECRET}
+    SLACK_POST_MESSAGE_SECRET: ${param:SLACK_POST_MESSAGE_SECRET}
 
 functions:
   app:
